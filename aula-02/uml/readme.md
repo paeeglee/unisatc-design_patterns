@@ -24,7 +24,7 @@ Principais diagramas da UML:
 
 ### Classe
 
-![Definição de Classe](/assets/uml-01.png)
+![Definição de Classe](/aula-02/uml/assets/uml-01.png)
 
 - Nome
 - Atributos
@@ -34,15 +34,15 @@ Principais diagramas da UML:
 
 ### Herança
 
-![Superclasse](/assets/uml-02.png)
+![Superclasse](/aula-02/uml/assets/uml-02.png)
 
 - Flechas com a cabeça do triângulo vazias indicam herança e sempre vão de uma subclasse para uma superclasse.
 
-![Simplificada](/assets/uml-03.png)
+![Simplificada](/aula-02/uml/assets/uml-03.png)
 
 - Classes em um diagrama UML podem ser simplificadas se é mais importante mostrar suas relações que seus conteúdos.
 
-![Interface](/assets/uml-04.png)
+![Interface](/aula-02/uml/assets/uml-04.png)
 
 - Setas simples indicam que uma classe usa a outra.
 - Interfaces em UML se parecem com classes, mas têm apenas métodos.
@@ -53,24 +53,30 @@ Principais diagramas da UML:
 
 #### Dependência
 
-![Dependência](/assets/uml-05.png)
+![Dependência](/aula-02/uml/assets/uml-05.png)
 
-```
-class Professor {
-  public function lecionar(curso: Curso) {
-    ...
-  }
-}
-```
+É o mais basico e fraco tipo de relação entre objetos em POO. Existe a dependencia entre as classes e qualquer mudança resultar em mudanças na outra classe.
 
 #### Associação
 
-![Associação](/assets/uml-06.png)
+![Associação](/aula-02/uml/assets/uml-06.png)
+
+É usado para representar algo como uma um campo em uma classe, a ligação sempre esta ali.
+
+##### Dependência x Associação
 
 ```
+// Dependência
 class Professor {
-  private estudante: Estudante;
-  public function lecionar(curso: Curso) {
+  public lecionar(curso: Curso) {
+    ...
+  }
+}
+
+// Associação
+class Professor {
+  private curso: Curso;
+  public lecionar() {
     ...
   }
 }
@@ -78,8 +84,8 @@ class Professor {
 
 #### Agregação
 
-![Agregação](/assets/uml-07.png)
+![Agregação](/aula-02/uml/assets/uml-07.png)
 
 #### Composição
 
-![Composição](/assets/uml-08.png)
+![Composição](/aula-02/uml/assets/uml-08.png)
