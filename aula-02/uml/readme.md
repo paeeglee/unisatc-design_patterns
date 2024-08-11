@@ -37,9 +37,6 @@ Principais diagramas da UML:
 ![Superclasse](/aula-02/uml/assets/uml-02.png)
 
 - Flechas com a cabeça do triângulo vazias indicam herança e sempre vão de uma subclasse para uma superclasse.
-
-![Simplificada](/aula-02/uml/assets/uml-03.png)
-
 - Classes em um diagrama UML podem ser simplificadas se é mais importante mostrar suas relações que seus conteúdos.
 
 ![Interface](/aula-02/uml/assets/uml-04.png)
