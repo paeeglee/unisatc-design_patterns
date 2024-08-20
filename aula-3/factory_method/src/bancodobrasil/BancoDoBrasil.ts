@@ -1,21 +1,22 @@
-import BancoCaixaBoleto10Dias from "./BancoCaixaBoleto10Dias";
-import BancoCaixaBoleto30Dias from "./BancoCaixaBoleto30Dias";
-import BancoCaixaBoleto60Dias from "./BancoCaixaBoleto60Dias";
-import Boleto from "./Boleto";
+import BancoDoBrasilBoleto10Dias from "./BancoDoBrasilBoleto10Dias";
+import BancoDoBrasilBoleto30Dias from "./BancoDoBrasilBoleto30Dias";
+import BancoDoBrasilBoleto60Dias from "./BancoDoBrasilBoleto60Dias";
+import Boleto from "../Boleto";
+import Banco from "../Banco";
 
-export default class BancoCaixa {
-  gerarBoleto(vencimento: number, valor: number): Boleto {
+export default class BancoDoBrasil extends Banco {
+  protected criarBoleto(vencimento: number, valor: number): Boleto {
     let boleto: Boleto;
 
     switch (vencimento) {
       case 10:
-        boleto = new BancoCaixaBoleto10Dias(valor);
+        boleto = new BancoDoBrasilBoleto10Dias(valor);
         break;
       case 30:
-        boleto = new BancoCaixaBoleto30Dias(valor);
+        boleto = new BancoDoBrasilBoleto30Dias(valor);
         break;
       case 60:
-        boleto = new BancoCaixaBoleto60Dias(valor);
+        boleto = new BancoDoBrasilBoleto60Dias(valor);
         break;
       default:
         throw new Error("Vencimento indisponível");

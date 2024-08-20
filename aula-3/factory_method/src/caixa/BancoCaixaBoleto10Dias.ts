@@ -1,4 +1,4 @@
-import Boleto from "./Boleto";
+import Boleto from "../Boleto";
 
 export default class BancoCaixaBoleto10Dias extends Boleto {
   constructor(valor: number) {
