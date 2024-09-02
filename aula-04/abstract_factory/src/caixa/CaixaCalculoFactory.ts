@@ -14,7 +14,7 @@ export default class CaixaCalculoFactory implements CalculoFactory {
   criarDesconto(): Desconto {
     return new CaixaDesconto();
   }
-  
+
   criarMulta(): Multa {
     return new CaixaMulta();
   }
