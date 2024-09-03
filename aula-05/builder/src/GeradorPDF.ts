@@ -14,38 +14,6 @@ export default class GeradorPDF {
   protected pageColor: string = '#ffffff';
   protected encode: string = '‘UTF-8';
 
-  constructor(
-    pageOrientation: string,
-    unit: string,
-    pageSizeX: number,
-    pageSizeY: number,
-    marginTop: number,
-    marginRight: number,
-    marginBottom: number,
-    marginLeft: number,
-    hasHeader: boolean,
-    headerHeight: number,
-    hasFooter: boolean,
-    footerHeight: number,
-    pageColor: string,
-    encode: string
-  ) {
-    this.pageOrientation = pageOrientation;
-    this.unit = unit;
-    this.pageSizeX = pageSizeX;
-    this.pageSizeY = pageSizeY;
-    this.marginTop = marginTop;
-    this.marginRight = marginRight;
-    this.marginBottom = marginBottom;
-    this.marginLeft = marginLeft;
-    this.hasHeader = hasHeader;
-    this.headerHeight = headerHeight;
-    this.hasFooter = hasFooter;
-    this.footerHeight = footerHeight;
-    this.pageColor = pageColor;
-    this.encode = encode;
-  }
-
   getPageOrientation(): string { return this.pageOrientation; }
   setPageOrientation(pageOrientation: string) { this.pageOrientation = pageOrientation; }
 
