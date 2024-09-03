@@ -7,10 +7,10 @@ export default class GeradorPDF {
   protected marginRight: number = 20;
   protected marginBottom: number = 30;
   protected marginLeft: number = 20;
-  protected hasHeader: boolean = true;
-  protected headerHeight: number = 15;
-  protected hasFooter: boolean = true;
-  protected footerHeight: number = 15;
+  protected hasHeader: boolean = false;
+  protected headerHeight: number = 0;
+  protected hasFooter: boolean = false;
+  protected footerHeight: number = 0;
   protected pageColor: string = '#ffffff';
   protected encode: string = '‘UTF-8';
 
